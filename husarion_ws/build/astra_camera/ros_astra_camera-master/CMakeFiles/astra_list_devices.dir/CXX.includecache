@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/include/astra_camera/astra_device_info.h
+ostream
+-
+boost/cstdint.hpp
+-
+
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/include/astra_camera/astra_device_manager.h
+astra_camera/astra_device_info.h
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/include/astra_camera/astra_camera/astra_device_info.h
+boost/thread/mutex.hpp
+-
+vector
+-
+string
+-
+ostream
+-
+
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/include/astra_camera/astra_exception.h
+cstdarg
+-
+cstdio
+-
+exception
+-
+string
+-
+
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/src/list_devices.cpp
+iostream
+-
+astra_camera/astra_device_manager.h
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/src/astra_camera/astra_device_manager.h
+astra_camera/astra_exception.h
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/src/astra_camera/astra_exception.h
+

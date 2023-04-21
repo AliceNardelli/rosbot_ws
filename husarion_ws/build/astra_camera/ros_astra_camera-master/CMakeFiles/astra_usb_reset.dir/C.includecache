@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/husarion/husarion_ws/src/astra_camera/ros_astra_camera-master/src/usb_reset.c
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+errno.h
+-
+sys/ioctl.h
+-
+linux/usbdevice_fs.h
+-
+

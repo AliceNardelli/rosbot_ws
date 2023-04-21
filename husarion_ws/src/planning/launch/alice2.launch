@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="rosbot_pro" default="false" />
+  <arg name="use_gazebo" default="false" />
+
+  <include file="$(find rosbot_ekf)/launch/all.launch">
+	<arg name="rosbot_pro" value="$(arg rosbot_pro)" />
+  </include>
+ 
+  <include unless="$(arg rosbot_pro)" file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+
+  <node unless="$(arg use_gazebo)" pkg="tf" type="static_transform_publisher" name="laser_broadcaster" args="0 0 0 3.14 0 0 base_link laser 100" />
+
+  
+  
+</launch>
